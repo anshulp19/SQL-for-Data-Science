@@ -1,0 +1,1 @@
+SELECT Customer.FirstName, Customer.LastName, Customer.City, Customer.Email, COUNT(*) as Total_Invoice From Customer LEFT JOIN Invoice ON Customer.CustomerId = Invoice.CustomerId GROUP BY Customer.CustomerId ;
